@@ -56,6 +56,31 @@ a:focus-visible {
   padding: 4rem 0;
 }
 
+.topnav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.topnav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  padding: 0 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.topnav a[aria-current="page"] {
+  color: var(--text);
+  border-color: rgba(143, 156, 255, 0.45);
+  background: rgba(143, 156, 255, 0.12);
+}
+
 .hero {
   padding: 2.25rem 0 2.5rem;
   border-bottom: 1px solid var(--border);
@@ -119,6 +144,38 @@ p {
 
 section p {
   max-width: 66ch;
+}
+
+.support-card {
+  padding: 1.15rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
+  box-shadow: 0 12px 32px -24px var(--shadow);
+}
+
+.support-label {
+  margin-bottom: 0.35rem;
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.support-value {
+  margin-bottom: 0.6rem;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.support-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.support-list li + li {
+  margin-top: 0.7rem;
 }
 
 @media (min-width: 720px) {

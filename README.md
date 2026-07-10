@@ -7,3 +7,7 @@ The site is published with GitHub Pages from the `main` branch and uses plain HT
 Expected public URL:
 
 https://steffondavis.github.io/photorank-privacy/
+
+Support page URL:
+
+https://steffondavis.github.io/photorank-privacy/support/
