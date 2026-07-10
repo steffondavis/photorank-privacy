@@ -1,0 +1,143 @@
+:root {
+  color-scheme: dark;
+  --background: #090b12;
+  --surface: #10131d;
+  --surface-strong: #151927;
+  --text: #ffffff;
+  --muted: #a8adbb;
+  --soft: #d7d9e2;
+  --border: rgba(255, 255, 255, 0.11);
+  --accent: #8f9cff;
+  --accent-strong: #b7bdff;
+  --shadow: rgba(0, 0, 0, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--background);
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(92, 112, 255, 0.18), transparent 34rem),
+    linear-gradient(180deg, #0c0f19 0%, var(--background) 36rem);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--accent-strong);
+  text-decoration-color: rgba(183, 189, 255, 0.55);
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.policy {
+  width: min(100% - 2rem, 760px);
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.hero {
+  padding: 2.25rem 0 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+  margin: 0 0 0.85rem;
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  max-width: 12ch;
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(2.45rem, 8vw, 4.65rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.effective-date {
+  margin: 1.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.intro {
+  max-width: 42rem;
+  margin: 1.15rem 0 0;
+  color: var(--soft);
+  font-size: 1.16rem;
+  line-height: 1.65;
+}
+
+section {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+h2 {
+  margin: 0 0 0.8rem;
+  color: var(--text);
+  font-size: clamp(1.18rem, 3vw, 1.42rem);
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+}
+
+section p {
+  max-width: 66ch;
+}
+
+@media (min-width: 720px) {
+  .policy {
+    padding: 6rem 0;
+  }
+
+  .hero {
+    padding-top: 3rem;
+    padding-bottom: 3.25rem;
+  }
+
+  section {
+    padding: 2.3rem 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
