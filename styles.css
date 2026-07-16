@@ -146,6 +146,10 @@ section p {
   max-width: 66ch;
 }
 
+section p + p {
+  margin-top: 0.85rem;
+}
+
 .support-card {
   padding: 1.15rem 1.2rem;
   border: 1px solid var(--border);
